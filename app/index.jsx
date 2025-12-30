@@ -1,11 +1,11 @@
-import { Image, Pressable, StyleSheet, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={myStyle.container}>
       <Image source={require("./pomodoro.png")}/>
       <View style={myStyle.actions}>
-        <Text style={myStyle.timer}>
+        <Text style={myStyle.myTimer}>
           25:00
         </Text>
           <Pressable style={myStyle.button}>
@@ -44,7 +44,7 @@ const myStyle = StyleSheet.create({
       borderColor: "#144480",
       gap: 32
   },
-  timer : {
+  myTimer : {
     fontSize: 54,
     color:'#FFFFFF',
     fontWeight: 'bold',
@@ -65,6 +65,7 @@ const myStyle = StyleSheet.create({
   },
   footerText:{
     textAlign: 'center',
-    color: '#98A0A8'    
+    color: '#98A0A8',
+    fontSize: 12.5    
   }
 });
